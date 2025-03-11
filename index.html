@@ -14,6 +14,19 @@
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Poppins', sans-serif;
     }
+     @keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
   </style>
 </head>
 <body class="bg-gray-900 text-white">
@@ -95,6 +108,27 @@
         </style>
         <h2 class="text-xl md:text-2xl mb-6 typewriter-subtitle">Aspiring:  Data Scientist | Machine Learning Engineer | Software Developer</h2>
         <p class="text-lg mb-8">Taking it one step at a time to implement software solutions that provide assistance, metrics, and real time data insights.</p>
+        <h2 class="text-xl md:text-2xl mb-6 typewriter-subtitle">Aspiring:  Data Scientist | Machine Learning Engineer | Software Developer</h2>
+        <p class="text-lg mb-8">Taking it one step at a time to implement software solutions that provide assistance, metrics, and real time data insights.</p>
+        <!-- Scrolling Logos Section -->
+        <section id="logos" class="py-8 bg-gray-800">
+          <div class="overflow-hidden whitespace-nowrap">
+            <div class="inline-flex animate-scroll">
+              <!-- First set of logos -->
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Virginia_Tech_logo.svg/1280px-Virginia_Tech_logo.svg.png" alt="Virginia Tech Logo" class="mx-4 h-16">
+              <img src="https://www.protiviti.com/themes/custom/protiviti/components/source/images/logo/gl-en-w.svg" alt="Protiviti Logo" class="mx-4 h-16">
+              <img src="https://media.licdn.com/dms/image/v2/C560BAQHRbhXkrg8YmQ/company-logo_200_200/company-logo_200_200/0/1630667528063?e=1749686400&v=beta&t=YCOPOrPPrY5Dyn3S6TRA9t6-9mm9Vb-KbBa7GgU404g" alt="Virginia Tech Hume Center Logo" class="mx-4 h-16">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/701px-Python-logo-notext.svg.png" alt="Python" class="mx-4 h-16">
+              <img src="https://condensedmedia.org/wp-content/uploads/2024/06/new-cm-logo-2024.png?w=136&h=136" alt="Condensed Media Logo" class="mx-4 h-16">
+              <!-- Duplicate set for seamless scrolling -->
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Virginia_Tech_logo.svg/1280px-Virginia_Tech_logo.svg.png" alt="Virginia Tech Logo" class="mx-4 h-16">
+              <img src="https://www.protiviti.com/themes/custom/protiviti/components/source/images/logo/gl-en-w.svg" alt="Protiviti Logo" class="mx-4 h-16">
+              <img src="https://media.licdn.com/dms/image/v2/C560BAQHRbhXkrg8YmQ/company-logo_200_200/company-logo_200_200/0/1630667528063?e=1749686400&v=beta&t=YCOPOrPPrY5Dyn3S6TRA9t6-9mm9Vb-KbBa7GgU404g" alt="Virginia Tech Hume Center Logo" class="mx-4 h-16">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/701px-Python-logo-notext.svg.png" alt="Python" class="mx-4 h-16">
+              <img src="https://condensedmedia.org/wp-content/uploads/2024/06/new-cm-logo-2024.png?w=136&h=136" alt="Condensed Media Logo" class="mx-4 h-16">
+            </div>
+          </div>
+        </section>
         <div class="flex justify-center space-x-4">
           <a href="#contact" class="bg-[#800000] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#990000] transition duration-300">
             Get in Touch
@@ -106,7 +140,6 @@
       </div>
     </div>
   </section>
-
   <!-- Projects Section -->
   <section id="projects" class="py-16 bg-gray-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
