@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Portfolio | Data Science & ML</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Proxima Nova', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Navigation -->
+  <nav class="bg-[#800000] shadow-md w-full">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex space-x-4">
+          <!-- Logo -->
+          <div>
+            <a href="#home" class="flex items-center py-5 px-2 text-white hover:text-[#CC5500]">
+              <span class="material-icons mr-1">star</span>
+              <span class="font-bold text-xl">Bhargav Ashok</span>
+            </a>
+          </div>
+        </div>
+        <!-- Navigation Links -->
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="#home" class="py-5 px-3 text-white hover:text-[#CC5500]">Home</a>
+          <a href="#projects" class="py-5 px-3 text-white hover:text-[#CC5500]">Projects</a>
+          <a href="#skills" class="py-5 px-3 text-white hover:text-[#CC5500]">Skills</a>
+          <a href="#about" class="py-5 px-3 text-white hover:text-[#CC5500]">About</a>
+          <a href="#contact" class="py-5 px-3 text-white hover:text-[#CC5500]">Contact</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button class="mobile-menu-button">
+            <span class="material-icons text-white">menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden bg-[#800000]">
+      <a href="#home" class="block py-2 px-4 text-sm hover:bg-gray-700">Home</a>
+      <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-700">Projects</a>
+      <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-700">Skills</a>
+      <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+      <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-24 md:pt-36 pb-12 bg-gradient-to-r from-[#800000] to-[#CC5500] text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <style>
+          .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #CC5500;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: 
+              typing 3.5s steps(40, end),
+              blink-caret .75s step-end infinite;
+          }
+
+          @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+          }
+
+          @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #CC5500; }
+          }
+        </style>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 typewriter" style="margin-bottom: 1.5rem; line-height: 1.2;">Hey, This is Bhargav Ashok</h1>
+        <style>
+          .typewriter-subtitle {
+            overflow: hidden;
+            border-right: .15em solid #CC5500;
+            white-space: nowrap;
+            margin: 1rem auto;
+            animation: 
+              typing 3.5s steps(40, end) 1s,
+              blink-caret .75s step-end infinite;
+          }
+        </style>
+        <h2 class="text-xl md:text-2xl mb-6 typewriter-subtitle">Aspiring:  Data Scientist | Machine Learning Engineer | Software Developer</h2>
+        <p class="text-lg mb-8">Taking it one step at a time to implement software solutions that provide assistance, metrics, and real time data insights.</p>
+        <div class="flex justify-center space-x-4">
+          <a href="#contact" class="bg-[#800000] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#990000] transition duration-300">
+            Get in Touch
+          </a>
+          <a href="#projects" class="bg-[#800000] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#990000] transition duration-300">
+            View Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-12 text-white">Featured Projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+          <!-- Removed image for a cleaner card -->
+          <div class="p-6">
+            <div class="flex items-center mb-2">
+              <span class="material-icons text-[#CC5500] mr-2">engineering</span>
+              <h3 class="text-xl font-semibold text-white">Systems-Engineering AI chatbot</h3>
+            </div>
+            <p class="text-gray-300 mb-4">Leveraged AI systems, API keys, software engineering principles, and systems engineering concepts to make an end-to-end MBSE chatbot application based on Systems Engineering Research, through the Virginia Tech Hume Center, and development goals.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Python</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Relational Databases</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Graph Databases</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Docker</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Azure</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Software diagramming</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">AI</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+          <!-- Removed image for a cleaner card -->
+          <div class="p-6">
+            <div class="flex items-center mb-2">
+              <span class="material-icons text-[#CC5500] mr-2">home</span>
+              <h3 class="text-xl font-semibold text-white">Real Estate Data Program</h3>
+            </div>
+            <p class="text-gray-300 mb-4">Developed a python script in Jupyter Notebook that leveraged Python Pandas, asyncio, Playwright, and Excel Output for webscrapping in order to catagorize and analyze Real Estate Housing Data in the Atlanta Area.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Pandas Dataframes</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Web Scrapping</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Excel</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Data Analysis</span>
+            </div>
+            </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+          <!-- Removed image for a cleaner card -->
+          <div class="p-6">
+            <div class="flex items-center mb-2">
+              <span class="material-icons text-[#CC5500] mr-2">sports_basketball</span>
+              <h3 class="text-xl font-semibold text-white">NBA Case Study: Data Predicition and Analysis</h3>
+            </div>
+            <p class="text-gray-300 mb-4">Built a simple linear regression model with 7-8 features (NBA stats and Advanced stat metrics) based on Webscrapped data from Basketball Reference on game splits for the 2025 season. Gathered Metrics of predicted data, outputted to a CSV, and built a dashboard in Tableau showing different statistical comparisons. Formulated a hypothetical case study based on the data for NBA player Devin Booker.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Sci-Kit-Learn</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Python</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Linear-Regression</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Data Visualization in Tableau</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Webscrapping</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Data Storytelling</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+          <!-- Removed image for a cleaner card -->
+          <div class="p-6">
+            <div class="flex items-center mb-2">
+              <span class="material-icons text-[#CC5500] mr-2">smart_toy</span>
+              <h3 class="text-xl font-semibold text-white">AI exploration project</h3>
+            </div>
+            <p class="text-gray-300 mb-4">Used Neo4j and made a simple project and exploration discussion on how an AI models and visualizes data in certain contexts with core principles of input and response data.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Neo4j</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Graph Data Visualization</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+          <!-- Removed image for a cleaner card -->
+          <div class="p-6">
+            <div class="flex items-center mb-2">
+              <span class="material-icons text-[#CC5500] mr-2">request_quote</span>
+              <h3 class="text-xl font-semibold text-white">Financial Analysis: Sony Corporation</h3>
+            </div>
+            <p class="text-gray-300 mb-4">Looked at financial data (Revenue, Profits, and Earnings Per share) for the Sony Corporation (SONY) from 2020-2024 and analyzing the company's finances while making suggestions for potential improvement and future company projections.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Python</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">APIs</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Matplotlib</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Fundamental understanding of lists and list comprehensions</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="bg-gray-700 rounded-lg shadow-lg overflow-hidden">
+          <!-- Removed image for a cleaner card -->
+          <div class="p-6">
+            <div class="flex items-center mb-2">
+              <span class="material-icons text-[#CC5500] mr-2">live_tv</span>
+              <h3 class="text-xl font-semibold text-white">Condensed Media: Online Branding and Social Media Page</h3>
+            </div>
+            <p class="text-gray-300 mb-4">Started a Website in 2021 titled condensed sports, and eventually made it a multi-disciplinary personal brand for sports and pop culture. Features a podcast, Instagram page, and website discussing all things sports/pop culture (sports analytics, stories, predicitions, etc).</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Social Media Marketing</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Website optimization</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Podcasting</span>
+              <span class="bg-[#CC5500] text-white text-xs px-2 py-1 rounded">Sports Analytics and Research</span>
+            </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-12 text-white">Technical Skills</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Data Science Skills -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <span class="material-icons text-[#CC5500] mr-3 text-2xl">analytics</span>
+            <h3 class="text-xl font-semibold text-white">Data Science</h3>
+          </div>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Statistical Analysis (Python &amp; R)
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Data Visualization
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Feature Engineering
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Predictive Modeling
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Data Cleaning &amp; Preprocessing
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Machine Learning Skills -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <span class="material-icons text-[#CC5500] mr-3 text-2xl">psychology</span>
+            <h3 class="text-xl font-semibold text-white">Machine Learning</h3>
+          </div>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Supervised Learning
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Unsupervised Learning
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Regression Testing
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Natural Language Processing
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Data Reterival &amp; Fine-Tuning
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Software Engineering Skills -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <span class="material-icons text-[#CC5500] mr-3 text-2xl">code</span>
+            <h3 class="text-xl font-semibold text-white">Software Engineering</h3>
+          </div>
+          <ul class="space-y-2 text-gray-300">
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Python, R, SQL
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Software Architecture &amp; Design Patterns
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Git, Docker
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              Cloud Services (Azure, AWS)
+            </li>
+            <li class="flex items-center">
+              <span class="material-icons text-green-400 mr-2 text-sm">check_circle</span>
+              APIs
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Tools and Technologies -->
+      <div class="mt-12">
+        <h3 class="text-xl font-semibold text-center mb-8 text-white">Frequently used Tools &amp; Technologies</h3>
+        <div class="flex flex-wrap justify-center gap-4">
+          <div class="bg-gray-800 px-4 py-2 rounded-full shadow-md flex items-center">
+            <span class="material-icons text-[#CC5500] mr-2">science</span>
+            <span class="text-gray-300">Flask</span>
+          </div>
+          <div class="bg-gray-800 px-4 py-2 rounded-full shadow-md flex items-center">
+            <span class="material-icons text-[#CC5500] mr-2">all_inclusive</span>
+            <span class="text-gray-300">Scikit-Learn</span>
+          </div>
+          <div class="bg-gray-800 px-4 py-2 rounded-full shadow-md flex items-center">
+            <span class="material-icons text-[#CC5500] mr-2">bar_chart</span>
+            <span class="text-gray-300">Pandas</span>
+          </div>
+          <div class="bg-gray-800 px-4 py-2 rounded-full shadow-md flex items-center">
+            <span class="material-icons text-[#CC5500] mr-2">bar_chart</span>
+            <span class="text-gray-300">NumPy</span>
+          </div>
+          <div class="bg-gray-800 px-4 py-2 rounded-full shadow-md flex items-center">
+            <span class="material-icons text-[#CC5500] mr-2">scatter_plot</span>
+            <span class="text-gray-300">Matplotlib</span>
+          </div>
+          <div class="bg-gray-800 px-4 py-2 rounded-full shadow-md flex items-center">
+            <span class="material-icons text-[#CC5500] mr-2">storage</span>
+            <span class="text-gray-300">SQL</span>
+          </div>
+          <div class="bg-gray-800 px-4 py-2 rounded-full shadow-md flex items-center">
+            <span class="material-icons text-[#CC5500] mr-2">cloud</span>
+            <span class="text-gray-300">MS Azure</span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="md:flex md:items-center md:space-x-12">
+        <div class="md:w-1/3 mb-8 md:mb-0">
+          <img src="C:\Users\bharg\Downloads\linkedin SS updated.jpg" alt="About Me" class="rounded-lg shadow-xl w-full h-auto">
+        </div>
+        <div class="md:w-2/3">
+          <h2 class="text-3xl font-bold mb-6 text-white">About Me</h2>
+          <p class="text-gray-300 mb-4">Hey, as you've probably already guessed... I'm Bhargav! I'm a student at Virginia Tech with a passion for data science, machine learning, and software engineering. My academic journey has been focused on solving complex problems using data-driven approaches and building intelligent systems.</p>
+          <p class="text-gray-300 mb-4">During my studies, I've developed a strong foundation in statistical analysis, predictive modeling, and software development. I've applied these skills through internships at companies and research projects at my university.</p>
+          <p class="text-gray-300 mb-6">When I'm not coding or sitting at a desk, you can find me at the basketball court, the gym, or on the couch...watching Netflix.</p>
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="flex items-center">
+              <span class="material-icons text-[#CC5500] mr-2">school</span>
+              <span class="text-gray-300">B.S. Computational Modeling and Data Analytics (Data Science)</span>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div class="flex items-center">
+                <span class="material-icons text-[#CC5500] mr-2">school</span>
+                <span class="text-gray-300">Virginia Tech</span>
+              </div>
+            <div class="flex items-center">
+              <span class="material-icons text-[#CC5500] mr-2">location_on</span>
+              <span class="text-gray-300">Atlanta, GA</span>
+            </div>
+            <div class="flex items-center">
+              <span class="material-icons text-[#CC5500] mr-2">language</span>
+              <span class="text-gray-300">English, Tamil</span>
+            </div>
+          </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-[#CC5500] text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center mb-12">Get In Touch (Just click the options below!)</h2>
+      <div class="md:flex md:space-x-8">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <span class="material-icons mr-3">email</span>
+              <p><a href="mailto:bhargav.ashok2023@gmail.com" class="hover:underline text-white">My Email</a></p>
+            </div>
+            <div class="flex items-center">
+              <span class="material-icons mr-3">phone</span>
+              <p><a href="tel:678-739-1266" class="hover:underline text-white">Phone Number</a></p>
+            </div>
+            <div class="flex items-center">
+              <span class="material-icons mr-3">location_on</span>
+              <span>United States</span>
+            </div>
+            <div class="flex items-center">
+              <span class="material-icons mr-3">link</span>
+              <a href="https://www.linkedin.com/in/bhargav-ashok2005/" target="_blank" class="hover:underline text-white">LinkedIn</a>
+            </div>
+            <div class="flex items-center">
+              <span class="material-icons mr-3">code</span>
+              <a href="https://github.com/BAsh2365" target="_blank" class="hover:underline text-white">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:w-1/2">
+          <form class="bg-gray-700 p-6 rounded-lg shadow-md text-gray-200" action="https://formspree.io/f/meoaqlak" method="POST">
+            <div class="mb-4">
+              <label for="name" class="block text-gray-200 font-medium mb-2">Name</label>
+              <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#CC5500]" placeholder="Your Name">
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-200 font-medium mb-2">Email</label>
+              <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#CC5500]" placeholder="Your Email">
+            </div>
+            <div class="mb-4">
+              <label for="subject" class="block text-gray-200 font-medium mb-2">Subject</label>
+              <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#CC5500]" placeholder="Subject">
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-gray-200 font-medium mb-2">Message</label>
+              <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#CC5500]" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-[#800000] text-white py-2 px-4 rounded-lg font-medium hover:bg-[#990000] transition duration-300 flex items-center justify-center">
+              Send Message <span class="material-icons ml-2">send</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-gray-800 text-gray-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="md:flex md:justify-between md:items-center">
+        <div class="mb-4 md:mb-0">
+          <div class="flex items-center">
+            <span class="material-icons mr-2">star</span>
+            <span class="font-bold text-xl">Bhargav Ashok</span>
+          </div>
+          <p class="mt-2 text-sm">Student at Virginia Tech</p>
+        </div>
+        <div class="flex flex-wrap gap-4">
+          <a href="#home" class="hover:text-white">Home</a>
+          <a href="#projects" class="hover:text-white">Projects</a>
+          <a href="#skills" class="hover:text-white">Skills</a>
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+        </div>
+      </div>
+      <div class="mt-8 pt-8 border-t border-gray-700 text-sm text-center">
+        <p>&copy; 2025 Bhargav Ashok. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
